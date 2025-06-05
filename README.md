@@ -6,7 +6,7 @@ A Flutter-based mobile app that uses **TensorFlow Lite (TFLite)** to classify Ti
 
 This app aims to assist farmers, artisans, and buyers in identifying **standard** and **substandard** Tikog leaves using image processing and machine learning.
 
-## ✨ Features
+✨ Features
 
 * 🔍 **Leaf Classification using TFLite**
 
@@ -29,7 +29,7 @@ This app aims to assist farmers, artisans, and buyers in identifying **standard*
 * **Camera / Image Picker Plugin**
 * **Image Preprocessing Utilities**
 
-## 📸 Usage
+📸 Usage
 
 1. Choose between:
 
@@ -41,11 +41,11 @@ This app aims to assist farmers, artisans, and buyers in identifying **standard*
    * ✅ **Standard** — suitable for weaving.
    * ❌ **Substandard** — not ideal for craftsmanship use.
 
-## 🌾 About Tikog
+🌾 About Tikog
 
 Tikog is a unique grass-like plant found in marshy areas of Samar. Its leaves are dried, dyed, and handwoven by local artisans into beautiful handicrafts such as mats (**banig**), bags, and wallets. Ensuring the quality of Tikog leaves helps preserve the cultural heritage and improves product quality.
 
-## 🧠 Model Details
+🧠 Model Details
 
 * **Model Type**: TFLite
 * **Activation**: Sigmoid
@@ -53,7 +53,7 @@ Tikog is a unique grass-like plant found in marshy areas of Samar. Its leaves ar
 * **Input Format**: RGB image resized to match model input (e.g., 224x224)
 * **Preprocessing**: Normalization (0-1 scaling)
 
-## 🧪 Getting Started
+🧪 Getting Started
 
 ### Prerequisites
 
