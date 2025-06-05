@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "flutter_application_1 (Flutter Pixel 4 API 30)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "vivo 1920"
+    },
+    {
+      "name": "flutter_application_1 (Flutter Pixel 4 API 30)",
+      "request": "launch",
+      "type": "dart",
+      "deviceId": "emulator-5554"  // optional: match your emulator ID
+    },
+    
+  ] 
+}
