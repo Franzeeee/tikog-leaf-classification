@@ -22,7 +22,7 @@ This app aims to assist farmers, artisans, and buyers in identifying **standard*
 
   * Runs fully offline once the model is downloaded.
 
-## 🛠 Tech Stack
+ 🛠 Tech Stack
 
 * **Flutter**
 * **TensorFlow Lite (TFLite)**
@@ -55,12 +55,12 @@ Tikog is a unique grass-like plant found in marshy areas of Samar. Its leaves ar
 
 🧪 Getting Started
 
-### Prerequisites
+# Prerequisites
 
 * Flutter SDK installed
 * Device/emulator with a camera
 
-### Installation
+# Installation
 
 ```bash
 git clone https://github.com/your-repo/tikog-leaf-classification.git
@@ -69,7 +69,7 @@ flutter pub get
 flutter run
 ```
 
-## 📚 Resources
+ 📚 Resources
 
 * [Flutter: Write your first app](https://docs.flutter.dev/get-started/codelab)
 * [TensorFlow Lite for Flutter](https://www.tensorflow.org/lite/flutter)
