@@ -29,12 +29,19 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Icon(Icons.spa, size: 80, color: Colors.green),
-            SizedBox(height: 20),
+          children: [
+            Image.asset(
+              'assets/images/tikog-logo.png',
+              width: 200, // Adjust size as needed
+              height: 200,
+            ),
             Text(
               "Tikog Leaf Classifier",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                color: const Color.fromARGB(255, 2, 95, 5),
+              ),
             ),
           ],
         ),
