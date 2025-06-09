@@ -1,66 +1,62 @@
----
+# Tikog Leaf Classification
 
-# 🌿 Tikog Leaf Classification
+Tikog Leaf Classification is a Flutter mobile application that uses **TensorFlow Lite (TFLite)** to classify Tikog leaves, a key material in the traditional weaving craft of Samar, Philippines.
 
-A Flutter-based mobile app that uses **TensorFlow Lite (TFLite)** to classify Tikog leaves—an essential raw material used in traditional mat weaving in **Samar, Philippines**.
+The app helps farmers, artisans, and buyers determine if a Tikog leaf is **standard** (good for weaving) or **substandard** (not ideal), using machine learning and image processing.
 
-This app aims to assist farmers, artisans, and buyers in identifying **standard** and **substandard** Tikog leaves using image processing and machine learning.
+## Features
 
-## ✨ Features
+- **TFLite-Based Classification**
+  - Uses a custom-trained TFLite model with **sigmoid activation**.
+  - Binary output: `0` for substandard, `1` for standard leaves.
 
-* 🔍 **Leaf Classification using TFLite**
+- **Dual Image Input Modes**
+  - **Image Upload or Camera Capture**: Pick from gallery or take a photo.
+  - **Live Detection**: Real-time classification using device camera.
 
-  * Utilizes a trained TFLite model with **sigmoid activation** to classify Tikog leaves.
-  * Determines if a leaf is **standard** (suitable for weaving) or **substandard** (unsuitable).
+- **Offline-Ready**
+  - App functions entirely offline once the model is bundled or downloaded.
 
-* 📷 **Dual Classification Modes**
+## About Tikog
 
-  * **Image Upload / Camera Capture**: Users can upload an image or take a photo of a Tikog leaf for classification.
-  * **Live Detection**: Real-time classification using the camera feed.
+Tikog is a grass-like plant found in the marshy areas of Samar, Philippines. Its leaves are traditionally dried, dyed, and handwoven into mats (locally called *banig*), bags, and other products. Ensuring high-quality leaves supports local craftsmanship and preserves cultural heritage.
 
-* ⚙️ **Offline Capability**
+## Model Details
 
-  * Runs fully offline once the model is downloaded.
+- **Format**: TensorFlow Lite (.tflite)
+- **Activation**: Sigmoid
+- **Input Shape**: RGB image resized (e.g., 224x224)
+- **Preprocessing**: Normalization (pixel values scaled to 0–1)
+- **Output**: Single float between 0 and 1 (thresholded at 0.5)
 
-## 🛠 Tech Stack
+## Tech Stack
 
-* **Flutter**
-* **TensorFlow Lite (TFLite)**
-* **Camera / Image Picker Plugin**
-* **Image Preprocessing Utilities**
+- Flutter
+- TensorFlow Lite
+- Camera and Image Picker Plugins
+- Dart + TFLite plugin
+- Image preprocessing with Dart
 
-## 📸 Usage
+## How to Use
 
-1. Choose between:
+1. Launch the app.
+2. Choose one of the input modes:
+   - Upload a Tikog leaf image.
+   - Take a photo.
+   - Enable live detection mode.
+3. The model will output the result:
+   - **Standard**: Suitable for weaving.
+   - **Substandard**: Not suitable.
 
-   * 📁 **Upload an Image** of a Tikog leaf.
-   * 📷 **Take a Photo** directly from the app.
-   * 🎥 **Live Detection** using your device’s camera.
-2. The model processes the image and returns:
-
-   * ✅ **Standard** — suitable for weaving.
-   * ❌ **Substandard** — not ideal for craftsmanship use.
-
-## 🌾 About Tikog
-
-Tikog is a unique grass-like plant found in marshy areas of Samar. Its leaves are dried, dyed, and handwoven by local artisans into beautiful handicrafts such as mats (**banig**), bags, and wallets. Ensuring the quality of Tikog leaves helps preserve the cultural heritage and improves product quality.
-
-## 🧠 Model Details
-
-* **Model Type**: TFLite
-* **Activation**: Sigmoid
-* **Output**: Binary classification (0 = Substandard, 1 = Standard)
-* **Input Format**: RGB image resized to match model input (e.g., 224x224)
-* **Preprocessing**: Normalization (0-1 scaling)
-
-## 🧪 Getting Started
+## Installation
 
 ### Prerequisites
 
-* Flutter SDK installed
-* Device/emulator with a camera
+- Flutter SDK installed
+- Android/iOS device or emulator
+- A working camera on the device
 
-### Installation
+### Steps
 
 ```bash
 git clone https://github.com/your-repo/tikog-leaf-classification.git
@@ -69,10 +65,14 @@ flutter pub get
 flutter run
 ```
 
-## 📚 Resources
 
-* [Flutter: Write your first app](https://docs.flutter.dev/get-started/codelab)
-* [TensorFlow Lite for Flutter](https://www.tensorflow.org/lite/flutter)
-* [Flutter Cookbook](https://docs.flutter.dev/cookbook)
+## Resources
 
----
+- [Flutter Docs](https://docs.flutter.dev)
+- [TensorFlow Lite for Flutter](https://www.tensorflow.org/lite/flutter)
+- [Flutter Cookbook](https://docs.flutter.dev/cookbook)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
